@@ -57,14 +57,14 @@ Carepulse_Backend
 
 Ensure you have the following installed:
 
-- [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
+- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
 - [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) (or other database if configured)
 - [Entity Framework CLI](https://docs.microsoft.com/en-us/ef/core/cli/dotnet) (for migrations)
 
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/carepulse-backend.git
+git clone https://github.com/Gbohunmifrancis/carepulse-backend.git
 cd carepulse-backend
 ```
 
@@ -77,10 +77,10 @@ Create a `appsettings.json` file at the root of your project, if it doesn’t al
 ```json
 {
   "ConnectionStrings": {
-    "DefaultConnection": "YourDatabaseConnectionString"
+    "DefaultConnection": "xxx"
   },
   "JWT": {
-    "SecretKey": "YourJWTSecretKey",
+    "SecretKey": "xxx",
     "Issuer": "Carepulse",
     "Audience": "CarepulseUsers"
   }
@@ -138,6 +138,8 @@ Here are some of the key endpoints:
 
 - **POST** `/api/auth/register` - Register a new user.
 - **POST** `/api/auth/login` - Login and receive a JWT token.
+- ![image](https://github.com/user-attachments/assets/b51a9a8f-3022-42c1-8b45-310972c799ae)
+
 
 #### Patients
 
