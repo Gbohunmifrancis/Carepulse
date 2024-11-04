@@ -4,6 +4,8 @@
 # Carepulse Backend
 
 Carepulse Backend is a RESTful API built with ASP.NET Core, designed to support a healthcare management application. This backend service provides authentication, appointment scheduling, and management of patients, doctors, and admins. The project includes role-based authentication for admin, doctors, and patients, with JWT tokens for secure access.
+![swaggerforbackend](https://github.com/user-attachments/assets/5ac02b26-6c94-4bd0-91f5-da0a80bb8c54)
+
 
 ## Table of Contents
 
@@ -138,10 +140,11 @@ Here are some of the key endpoints:
 
 - **POST** `/api/auth/register` - Register a new user.
 - **POST** `/api/auth/login` - Login and receive a JWT token.
-- ![image](https://github.com/user-attachments/assets/b51a9a8f-3022-42c1-8b45-310972c799ae)
 
 
 #### Patients
+![image](https://github.com/user-attachments/assets/d3573c47-52e6-4fc4-a9fc-8428275fb2d1)
+
 
 - **GET** `/api/patients` - Get all patients.
 - **GET** `/api/patients/{id}` - Get a patient by ID.
@@ -150,12 +153,22 @@ Here are some of the key endpoints:
 - **DELETE** `/api/patients/{id}` - Delete a patient.
 
 #### Appointments
+![image](https://github.com/user-attachments/assets/9a818f90-e6dd-485b-9ae5-2821e97cedd7)
+
 
 - **GET** `/api/appointments` - Get all appointments.
 - **GET** `/api/appointments/{id}` - Get an appointment by ID.
 - **POST** `/api/appointments` - Create a new appointment.
 - **PUT** `/api/appointments/{id}` - Update an existing appointment.
 - **DELETE** `/api/appointments/{id}` - Delete an appointment.
+### Doctors
+![image](https://github.com/user-attachments/assets/dcb99628-1f00-4c5f-82f8-4e358bc0143c)
+
+- **GET** `/api/Doctors` - Get all doctors
+- **GET** `/api/doctors/{id}` - Get a Doctor
+- **POST** `/api/doctors` - Create a new Doctor
+- **PUT** `/api/doctor/{id}` - Update an existing doctor
+- **DELETE** `/api/doctor/{id}` - Delete a doctor
 
 ---
 
@@ -199,4 +212,4 @@ For inquiries, please contact the project maintainer: **Francis Gbohunmi**.
 
 ---
 
-![swaggerforbackend](https://github.com/user-attachments/assets/44456678-d9d6-42a4-8a73-1b2dbc7b71bc)
+
